@@ -1,7 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
-// التوكنز الخاصة بك
 const TELEGRAM_TOKEN = '8375130826:AAGCq1il8Bkit0PuvwgZxYakvHssIFC2Wmw';
 const NOCODB_TOKEN = 'nc_pat_malRaeiUmpPk277KG7xUSst1yZBRKue2iuZYvCPv';
 const NOCODB_URL = 'https://app.nocodb.com/api/v2/tables/mpryrwjikak17ao/records';
@@ -22,12 +21,12 @@ async function sendControlPanel(chatId) {
         const statusText = config.execution_enabled ? '🟢 شغال (ACTIVE)' : '🔴 متوقف (DISABLED)';
         const newsText = config.news_filter ? 'مفعّل ✅' : 'معطّل ❌';
         
-        const message = 🤖 *لوحة تحكم التداول - Masar Control*
-───────────────────────────────
-📊 *حالة التداول:* ${statusText}
-📐 *حجم اللوت:* \${config.lot_size}\
-📰 *فلتر الأخبار:* ${newsText}
-───────────────────────────────;
+        const message = '🤖 *لوحة تحكم التداول - Masar Control*\n' +
+                        '───────────────────────────────\n' +
+                        '📊 *حالة التداول:* ' + statusText + '\n' +
+                        '📐 *حجم اللوت:* ' + config.lot_size + '\n' +
+                        '📰 *فلتر الأخبار:* ' + newsText + '\n' +
+                        '───────────────────────────────';
 
         const keyboard = {
             inline_keyboard: [
