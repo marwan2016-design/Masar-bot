@@ -22,7 +22,7 @@ async function sendControlPanel(chatId) {
         const statusText = config.execution_enabled ? '🟢 شغال (ACTIVE)' : '🔴 متوقف (DISABLED)';
         const newsText = config.news_filter ? 'مفعّل ✅' : 'معطّل ❌';
         
-        const message = 🤖 *لوحة تحكم التداول - Masar Control*\n +
+        const message = "🤖 *لوحة تحكم التداول - Masar Control*\n" +
                         ───────────────────────────────\n +
                         📊 *حالة التداول:* ${statusText}\n +
                         📐 *حجم اللوت:* \${config.lot_size}\\n +
