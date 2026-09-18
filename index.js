@@ -2,8 +2,8 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
 // المفاتيح الخاصة بقاعدتك وبوتك
-const TELEGRAM_TOKEN = 'ضِع_تليغرام_توكن_هنا';
-const NOCODB_TOKEN = 'ضِع_نوكودبي_توكن_هنا';
+const TELEGRAM_TOKEN = '8375130826:AAGCq1il8Bkit0PuvwgZxYakvHssIFC2Wmw';
+const NOCODB_TOKEN = 'nc_pat_malRaeiUmpPk277KG7xUSst1yZBRKue2iuZYvCPv';
 const NOCODB_URL = 'https://app.nocodb.com/api/v2/tables/mpryrwjikak17ao/records';
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
